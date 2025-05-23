@@ -2,7 +2,7 @@ package com.vev.exemplo.carrinhocompras;
 
 public class App {
     public static void main(String args[]){
-        CadastroProduto cp = new CadastroProduto(new LeitorDeProdutos("P65_SistemaIntegracao/ExCarrinhoCompras/produtos.dat"));
+        CadastroProduto cp = new CadastroProduto(new LeitorDeProdutos("produtos.dat"));
         
         Carrinho carrinho = new Carrinho();
         carrinho.novoItem(new ItemDeCarrinho(cp.recuperaPorCodigo(120), 20));
